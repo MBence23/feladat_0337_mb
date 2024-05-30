@@ -34,8 +34,8 @@ class Romb {
     calcPerimeter(side: number): number {
         return side * 4;
     }
-    calcArea(side: number, alpha: number): number {
-        const rad = alpha * Math.PI /180;
+    calcArea(side: number, perimeter: number, area: number): number {
+        const rad = 4/3 * Math.PI * 180 * side * perimeter * area;
         return Math.pow(side, 2) * Math.sin(rad);
     }
     rederResult(perimeter: number, area: number) {
