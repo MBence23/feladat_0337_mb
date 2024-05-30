@@ -12,20 +12,33 @@
     <div class="container">
       <h1>Ellipszoid térfogat számítás</h1>
     </div>
-    
-    <label for="sideA">A tengely értéke: </label>
-    <input type="number" id="sideA"><br><br>
+    <div class="form">
+      <div class="input">
+        <label for="side" 
+        class="form-label">A tengely</label>
+        <input type="text" 
+        class="form-control" 
+        id="side">
+      </div>
+      <div class="input">
+        <label for="perimeter" 
+        class="form-label">B tengely</label>
+        <input type="text" 
+        class="form-control" 
+        id="perimeter">
+      </div>
+      <div class="input">
+        <label for="area" 
+        class="form-label">C tengely</label>
+        <input type="text" 
+        class="form-control" 
+        id="area">
+      </div>
 
-    <label for="sideB">B tengely értéke: </label>
-    <input type="number" id="sideB"><br><br>
-
-    <label for="sideC">C tengely értéke: </label>
-    <input type="number" id="sideC"><br><br>
-
-    
-
-    <button onclick="calculateArea()">Számítás</button><br><br>
-    <p id="result"></p>
+      <div>
+        <Button class="btn btn-primary"
+        id="calcButton">Számít</Button>
+      </div>
 
     <div>Az Ellipszoid térfogata: </div>
 
@@ -34,7 +47,6 @@
 
 
     <script type="module" src="app.js"></script>
-
   </body>
 </html>
 
