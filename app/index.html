@@ -4,16 +4,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinto Project</title>
+    <title>Ellipszoid</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">        
   </head>
   <body>
     <div class="container">
-      <h1>Sinto Project</h1>
-      <p>This is a default index.html file, which was created by the sin command.</p>
+      <h1>Ellipszoid térfogat számítás</h1>
     </div>
+    
+    <label for="sideA">A tengely értéke: </label>
+    <input type="number" id="sideA"><br><br>
+
+    <label for="sideB">B tengely értéke: </label>
+    <input type="number" id="sideB"><br><br>
+
+    <label for="sideC">C tengely értéke: </label>
+    <input type="number" id="sideC"><br><br>
+
+    
+
+    <button onclick="calculateArea()">Számítás</button><br><br>
+    <p id="result"></p>
+
+    <div>Az Ellipszoid térfogata: </div>
+
+
+
+
+
     <script type="module" src="app.js"></script>
+
   </body>
 </html>
 
